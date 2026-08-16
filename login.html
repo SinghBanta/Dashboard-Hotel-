@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <main>
+        <div class="login-wrapper">
+            <div class="form_container">
+
+                <div class="logo_section">
+                    <img src="assets/images/logo-login.webp" alt="">
+                    <h4>Sign In</h4>
+                    <p>Sign in to continue to WebChat.</p>
+                </div>
+
+                <div class="form">
+                    <form method="POST" action="#">
+                        <div class="email-field input_box">
+                            <label>Email</label>
+                            <div class="email-wrapper input-fields">
+                                <span class="icon-user">
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
+                                <input type="email" name="email" placeholder="Enter email">
+                            </div>
+                        </div>
+
+                        <div class="password-field input_box">
+                            <label>Password</label>
+                            <div class="password-wrapper input-fields">
+                                <span class="icon-user">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                                <input type="password" name="password" placeholder="Enter password">
+
+                                <button class="password-toggle-btn" type="button" id="togglePasswordBtn"
+                                    aria-label="Show password">
+                                    <i class="fa-regular fa-eye-slash" id="toggleIcon"></i>
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="check-box">
+                            <input type="checkbox" id="subscribe" name="newsletter" value="yes">
+                            <label for="subscribe">Remember me</label>
+                        </div>
+
+                        <button class="btn">Sign in</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
