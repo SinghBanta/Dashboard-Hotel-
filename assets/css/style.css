@@ -32,11 +32,6 @@ main {
 
 }
 
-
-
-
-
-
 .login-wrapper {
     /* border:1px solid red; */
     display: flex;
@@ -74,7 +69,6 @@ main {
     color: var(--label-color);
     font-size: 16px;
 }
-
 
 
 /* Form Styling */
@@ -135,6 +129,7 @@ main {
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
+    /* To center the button vertically and keep it same place when we have to make it's size responsive */
     background: unset;
     border: unset;
     color: #7a7f9a;
@@ -148,7 +143,7 @@ main {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 24px
+    margin-bottom: 24px;
 }
 
 .check-box input[type="checkbox"] {
@@ -163,8 +158,6 @@ main {
     color: var(--label-color);
 
 }
-
-
 
 .btn {
     background-color: var(--primary-color);
@@ -186,10 +179,29 @@ main {
     transition: 0.3s;
 }
 
+.forget-password {
+    margin-top: 1.5rem;
+    font-size: 16px;
+    color: var(--label-color);
+    font-weight: 500;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
 
+p.forget-password a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
 
-
-
+@media (max-width:425px) {
+    .form_container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
 
 /* 
 .icon-user {
@@ -199,8 +211,6 @@ main {
 .email-wrapper input {
     border: none;
     padding: 12px 6px;
-    
-
 }
 
 .email-wrapper {
@@ -209,18 +219,9 @@ main {
     margin-bottom: 1rem !important;
 }
 
-
-
-
-
-
-
-
 .password-wrapper input:focus {
     outline: none;
 }
-
-
 
 .password-wrapper input {
     border: none;
